@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Difference Calculator</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 500px;
+      margin: 20vh auto 0 auto;
+      background-image: linear-gradient(
+        to left,
+        rgb(241, 33, 172),
+        rgb(104, 71, 252)
+      );
+      border-radius: 5px;
+      padding: 30px;
+    }
+    button {
+      background-color: gray;
+      color: white;
+      cursor: pointer;
+      width: 50%;
+      padding: 10px 0;
+      border-radius: 10px;
+    }
+    button:hover {
+      background-color: lightcoral;
+    }
+    .times {
+      width: 500px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Time Difference Calculator</h1>
+      <form>
+        <label for="startTime">Start Time:</label>
+        <input
+          type="time"
+          id="startTime"
+          required=""
+          class="times"
+        /><br /><br />
+
+        <label for="endTime">End Time:</label>
+        <input type="time" id="endTime" required="" class="times" /><br /><br />
+
+        <button type="button" onclick="calculateTimeDifference()">
+          Calculate Time Difference
+        </button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="time.js"></script>
+  </body>
+</html>
